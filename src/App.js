@@ -3,6 +3,7 @@ import './App.css';
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+import {useAuthState} from "react-firebase-hooks/auth";
 
 firebase.initializeApp({
   apiKey: "AIzaSyCqUufMhoPO3MvT3Nl1jCN3ECapw_93h1I",
@@ -17,14 +18,46 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
+
 function App() {
+  const [user] = useAuthState(auth);
+  console.log("user" + user)
   return (
     <div className="App">
       <header className="App-header">
-
       </header>
+      <section>
+        {user ? <Chatroom/> : <SignIn/>}
+      </section>
     </div>
   );
+}
+
+function SignIn() {
+  const signInWithGoogle = async () => {
+    const provider = new firebase.auth.GithubAuthProvider();
+    await auth.signInWithPopup(provider)
+  }
+  return (
+    <div>
+      <button onClick={signInWithGoogle}>Sign in with Google</button>
+    </div>
+  )
+}
+
+function SignOut() {
+  return auth.currentUser && (
+    <button onClick={() => auth.signOut()}>Sign Out</button>
+  )
+}
+
+function Chatroom() {
+
+  return (
+    <div>
+      <h1>CChat room</h1>
+    </div>
+  )
 }
 
 export default App;
