@@ -27,20 +27,17 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>⚛️</h1>
         <SignOut/>
       </header>
-
       <section>
         {user ? <ChatRoom/> : <SignIn/>}
       </section>
-
     </div>
   );
 }
 
 function SignIn() {
-
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);

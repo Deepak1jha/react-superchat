@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+  background-color: #0f1f40;
 }
 
 .App {
@@ -9,7 +9,7 @@ body {
 }
 
 .App header {
-  background-color: #181717;
+  background-color: #2e2e38;
   height: 10vh;
   min-height: 50px;
   color: white;
@@ -23,6 +23,7 @@ body {
   z-index: 99;
   padding: 10px;
   box-sizing: border-box;
+  border-radius: 1rem;
 }
 
 .App section {
@@ -30,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  background-color: rgb(7, 24, 42);
 }
 
 main {
@@ -102,9 +103,10 @@ button:disabled {
 
 .sign-in {
   color: #282c34;
-  background: white;
+  background: #e74242;
   max-width: 400px;
   margin: 0 auto;
+  border-radius: 5rem;
 }
 
 
