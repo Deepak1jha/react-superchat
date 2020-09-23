@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-superchat/static/css/main.7d52a7e4.chunk.css",
+    "main.js": "/react-superchat/static/js/main.0c4fc111.chunk.js",
+    "main.js.map": "/react-superchat/static/js/main.0c4fc111.chunk.js.map",
+    "runtime-main.js": "/react-superchat/static/js/runtime-main.e930d6f5.js",
+    "runtime-main.js.map": "/react-superchat/static/js/runtime-main.e930d6f5.js.map",
+    "static/js/2.df298c3c.chunk.js": "/react-superchat/static/js/2.df298c3c.chunk.js",
+    "static/js/2.df298c3c.chunk.js.map": "/react-superchat/static/js/2.df298c3c.chunk.js.map",
+    "index.html": "/react-superchat/index.html",
+    "precache-manifest.3175e62a5cb8ec04434f987bfdca2559.js": "/react-superchat/precache-manifest.3175e62a5cb8ec04434f987bfdca2559.js",
+    "service-worker.js": "/react-superchat/service-worker.js",
+    "static/css/main.7d52a7e4.chunk.css.map": "/react-superchat/static/css/main.7d52a7e4.chunk.css.map",
+    "static/js/2.df298c3c.chunk.js.LICENSE.txt": "/react-superchat/static/js/2.df298c3c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e930d6f5.js",
+    "static/js/2.df298c3c.chunk.js",
+    "static/css/main.7d52a7e4.chunk.css",
+    "static/js/main.0c4fc111.chunk.js"
+  ]
+}
